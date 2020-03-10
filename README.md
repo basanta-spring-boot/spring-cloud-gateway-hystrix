@@ -1,15 +1,12 @@
 # spring-cloud-gateway-hystrix
 
-# standard-json
-
-[![npm][npm-image]][npm-url]
-[![travis][travis-image]][travis-url]
 
 API-GateWay
 -----------
+```bash
 URL : http://localhost:8080/ms1/orders
 HTTP Method : POST
-
+```
 Json Request :
 ```json
 {
@@ -38,4 +35,17 @@ Json Response :
     "userName": "Basant"
 }
 
+```
+```bash
+URL : http://localhost:8080/ms2/{orderId}
+HTTP Method : GET
+```
+Json Response :
+```json
+{
+    "paymentId": 1,
+    "transactionId": "d86cfeca-0b26-455e-a1a2-ac3e53707829",
+    "orderId": 103,
+    "paymentStatus": "SUCCESS"
+}
 ```
